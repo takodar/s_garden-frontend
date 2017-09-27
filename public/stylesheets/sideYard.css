@@ -1,0 +1,71 @@
+#tree_1{
+    background-color: transparent;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 5;
+    height: 100px;
+    width: 272px;
+}
+
+#tree_2{
+    background-color: transparent;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 5;
+    height: 100px;
+    width: 283px;
+}
+
+#tree_3{
+    background-color: transparent;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 5;
+    height: 50px;
+    width: 180px;
+}
+
+#tree_4{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    height: 53px;
+    width: 207px;
+}
+
+#tree_5{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    height: 38px;
+    width: 95px;
+}
+
+#tree_6{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    height: 42px;
+    width: 153px;
+}
+
+#tree_7{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    height: 31px;
+    width: 72px;
+}
+
+#tree_8{
+    background-color: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    height: 67px;
+    width: 111px;
+}

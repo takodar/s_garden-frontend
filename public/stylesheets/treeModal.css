@@ -1,0 +1,84 @@
+.treePopUp {
+    position: absolute;
+    z-index: 100;
+    top: 10vh;
+    left: 25vw;
+    display: none;
+    background-color: #d6ffd3;
+    width: 50vw;
+    border: solid black 10px;
+    padding: 12px 25px;
+}
+
+#exitPopup {
+    color: black;
+    position: absolute;
+    right: 0;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #000;
+}
+
+.table-bordered {
+    border: 1px solid #000;
+}
+
+#treeHeader {
+    margin-top: 0;
+}
+
+.thumbnail {
+    width: 119px;
+}
+
+.imgUpload:hover {
+    cursor: pointer;
+}
+
+#txtImageUpload {
+    margin-top: 6px;
+}
+
+.imgUpload {
+    height: 30px;
+    border: 2px rgb(102, 102, 102) dashed;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    height: 30px
+}
+
+.image-gallery-slide .image-gallery-description {
+    top: 0;
+    height: 32px;
+    margin: 10px;
+}
+
+#displayTable {
+    width: 5px;
+    /*margin-left: -39px;*/
+}
+
+#pnlFormUpload {
+    margin-top: 25px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+td, th{
+    padding: 10px 5px;
+}
+
+.panel > .list-group .list-group-item, .panel > .panel-collapse > .list-group .list-group-item {
+    height: 4em;
+}
+
+/*.thumbnail{*/
+    /*height: 30px;*/
+/*}*/
