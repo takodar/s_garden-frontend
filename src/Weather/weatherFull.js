@@ -30,7 +30,7 @@ class Weather extends Component {
     state = {weather: [], sevenDays: [] };
 
     componentDidMount() {
-        fetch('http://api.openweathermap.org/data/2.5/forecast/daily?zip=03037&APPID=916847b6b7d2d1d9a152a66bf14d2095&units=imperial')
+        fetch('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast/daily?zip=03037&APPID=916847b6b7d2d1d9a152a66bf14d2095&units=imperial')
             .then(res => res.json())
             .then(weather => this.setState({weather}));
     }
