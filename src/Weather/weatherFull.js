@@ -3,8 +3,7 @@
  */
 import React, {Component} from 'react';
 import {Panel, ListGroup, ListGroupItem} from 'react-bootstrap';
-var d = new Date();
-var options = { weekday: 'long', month: 'long', day: 'numeric' };
+const options = { weekday: 'long', month: 'long', day: 'numeric' };
 
 function myWeather(weather) {
     let i;
@@ -36,8 +35,6 @@ class Weather extends Component {
     }
 
     render() {
-        var a = this.state.weather['list'];
-        console.log(a);
         return (
             <div>
                 {

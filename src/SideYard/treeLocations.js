@@ -3,14 +3,14 @@
  */
 import TreeDetails from '../TreePopup/treeModal';
 import React, {Component} from 'react';
-import {reactConfig} from '../Conf/reactConfig';
+const hostName = process.env.REACT_APP_HOST;
 import '../../public/stylesheets/sideYard.css';
 
 class SideYardTreeHoverLocations extends Component {
     state = {locations: []};
 
     componentDidMount() {
-        fetch(reactConfig.host + '/locations')
+        fetch(hostName + '/locations')
             .then(res => res.json())
             .then(locations => this.setState({locations}));
     }

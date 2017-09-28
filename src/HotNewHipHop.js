@@ -2,11 +2,11 @@
  * Created by takodaregister on 8/5/17.
  */
 import React, { Component } from 'react';
-import {reactConfig} from '../Conf/reactConfig';
+const hostName = process.env.REACT_APP_HOST;
 class HotNewHipHop extends Component {
     state = {users: []};
     componentDidMount() {
-        fetch(reactConfig.host'/hotnewhiphop')
+        fetch(hostName + '/hotnewhiphop')
             // .then(res => res.json())
             // .then(users => this.setState({ users }));
     }
