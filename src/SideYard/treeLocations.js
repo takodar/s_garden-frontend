@@ -5,7 +5,7 @@ import TreeDetails from '../TreePopup/treeModal';
 import React, {Component} from 'react';
 const hostName = process.env.REACT_APP_HOST;
 import '../../public/stylesheets/sideYard.css';
-
+console.log(hostName);
 class SideYardTreeHoverLocations extends Component {
     state = {locations: []};
 
