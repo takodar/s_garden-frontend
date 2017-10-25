@@ -19,7 +19,6 @@ import AboutMe from './AboutMe/AboutMe';
 import EscKeyListener from './TreePopup/escKeyPressClose';
 import {LinkContainer} from 'react-router-bootstrap';
 
-
 class FrontYardDisplay extends Component {
     render() {
         return <FrontYard/>
