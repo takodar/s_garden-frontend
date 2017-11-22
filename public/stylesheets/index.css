@@ -5,11 +5,6 @@
     border-radius: 0;
 }
 
-#imgLeftSide {
-    height: 650px;
-    z-index: 1;
-}
-
 #imgFrontYard {
     height: 650px;
     z-index: 1;
@@ -122,4 +117,24 @@ a:hover, a:focus {
 
 #resume:hover{
     border: solid 4px deepskyblue;
+}
+
+#homepageContent{
+    background: url(../images/Left_Side.jpg) left top no-repeat;
+    height: calc(100vh - 50px);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+#frontYardContent{
+    background: url(../images/Front_Yard.jpg) left top no-repeat;
+    height: calc(100vh - 50px);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 1;
 }

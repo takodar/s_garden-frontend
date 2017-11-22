@@ -36,7 +36,7 @@ class Weather extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{"padding":"20px 10px"}}>
                 {
                     myWeather(this.state.weather['list'])
                 }

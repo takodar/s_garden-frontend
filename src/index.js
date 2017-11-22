@@ -15,10 +15,9 @@ import Board from './TIC TAC TOE/TIC-TAC-TOE';
 import Weather from './Weather/weatherNav';
 import WeatherFull from './Weather/weatherFull';
 import AboutMe from './AboutMe/AboutMe';
-// import HotNewHipHop from './HotNewHipHop';
 import EscKeyListener from './TreePopup/escKeyPressClose';
 import {LinkContainer} from 'react-router-bootstrap';
-
+import IntroJs from './IntroJs';
 class FrontYardDisplay extends Component {
     render() {
         return <FrontYard/>
@@ -28,7 +27,8 @@ class FrontYardDisplay extends Component {
 
 class TicTacToe extends Component {
     render() {
-        return <div className="col-lg-12" id="boardGame"><Board /></div>;
+        return <div className="col-lg-12" id="boardGame">
+            <Board /></div>;
     }
 }
 
@@ -57,6 +57,7 @@ const PageNavigation = () => (
                 </Nav>
                     <Nav pullRight>
                         <Weather />
+                        <NavItem><IntroJs/></NavItem>
                     </Nav>
                     </Navbar.Collapse>
                 <EscKeyListener/>

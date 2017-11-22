@@ -2,70 +2,86 @@
     background-color: transparent;
     border-radius: 25px;
     position: absolute;
+    top: 84%;
+    left: 76%;
     z-index: 5;
-    height: 100px;
-    width: 272px;
+    height: 12%;
+    width: 24%;
 }
 
 #tree_2{
     background-color: transparent;
     border-radius: 25px;
     position: absolute;
+    top: 84%;
+    left: 0;
     z-index: 5;
-    height: 100px;
-    width: 283px;
+    height: 14%;
+    width: 24%;
 }
 
 #tree_3{
     background-color: transparent;
     border-radius: 25px;
     position: absolute;
+    top: 69%;
+    left: 65%;
     z-index: 5;
-    height: 50px;
-    width: 180px;
+    height: 5%;
+    width: 15%;
 }
 
 #tree_4{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
+    top: 66%;
+    left: 16%;
     z-index: 5;
-    height: 53px;
-    width: 207px;
+    height: 7%;
+    width: 18%;
 }
 
 #tree_5{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
+    top: 62%;
+    left: 63%;
     z-index: 5;
-    height: 38px;
-    width: 95px;
+    height: 3%;
+    width: 7%;
 }
 
 #tree_6{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
+    top: 59%;
+    left: 26%;
     z-index: 5;
-    height: 42px;
-    width: 153px;
+    height: 4%;
+    width: 13%;
 }
 
 #tree_7{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
+    top: 55%;
+    left: 59%;
     z-index: 5;
-    height: 31px;
-    width: 72px;
+    height: 3%;
+    width: 7%;
 }
 
 #tree_8{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
+    top: 38%;
+    left: 20%;
     z-index: 5;
-    height: 67px;
-    width: 111px;
+    height: 8%;
+    width: 10%;
 }

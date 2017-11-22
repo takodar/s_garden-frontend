@@ -5,7 +5,6 @@ import TreeDetails from '../TreePopup/treeModal';
 import React, {Component} from 'react';
 const hostName = process.env.REACT_APP_HOST;
 import '../../public/stylesheets/sideYard.css';
-console.log(hostName);
 class SideYardTreeHoverLocations extends Component {
     state = {locations: []};
 
@@ -17,16 +16,16 @@ class SideYardTreeHoverLocations extends Component {
 
     render() {
         return (
-            <div>
-                <div className="col-sm-12 noPadding"><img alt="side_left" id="imgLeftSide"
-                                                                   src="/images/Left_Side.jpg"/>
-                </div>
+            <div id="homepageContent">
                 {this.state.locations.map(location =>
                     <div key={location._id}>
                         <div id={'tree_' + location.id} onMouseEnter={() => highlight(location.id)}
                              onMouseLeave={() => removeHighlight(location.id)}
                              onClick={() => displayTreeData(location.id)}
-                             style={{'left': location.left + 'px', 'top': location.top + 'px'}}></div>
+                             // style={{'left': location.left + 'px', 'top': location.top + 'px'}}>
+                             >
+
+                        </div>
                         <div id={"treePopUp" + location.id} className="treePopUp">
                             <div id={"displayDataForTree" + location.id}>
                                 <TreeDetails id={location.id} className={location.type}/>
