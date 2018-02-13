@@ -24,7 +24,7 @@ class TreeDetails extends Component {
     state = {trees: [], files: [], images: []};
 
     componentDidMount() {
-        fetch(hostName + '/s_garden_trees/' + this.props.id)
+        fetch(  'https://service.takoda.net/s_garden_trees/' + this.props.id)
             .then(res => res.json())
             .then(trees => this.setState({trees}));
     }
@@ -87,7 +87,7 @@ class TreeDetails extends Component {
                     <div className="col-lg-11 col-sm-11 noPadding" id="pnlFormUpload">
                         <Panel collapsible defaultExpanded header="Upload Data">
                             <ListGroup fill>
-                                <form action={hostName + "/s_garden"} method="POST"
+                                <form action={"https://service.takoda.net/s_garden"} method="POST"
                                       id={"uploadTreeForm" + this.props.id}>
                                     <ListGroupItem><input id="date" type="text" placeholder="Date"
                                                           name="date" className="col-sm-12 col-lg-12  col-xs-12"/></ListGroupItem>
