@@ -9,7 +9,7 @@ class SideYardTreeHoverLocations extends Component {
     state = {locations: []};
 
     componentDidMount() {
-        fetch(hostName + '/locations')
+        fetch('https://service.takoda.net/locations')
             .then(res => res.json())
             .then(locations => this.setState({locations}));
     }
