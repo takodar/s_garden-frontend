@@ -1,0 +1,140 @@
+#homepageNav {
+    margin: 0;
+    background: rgb(0, 0, 0);
+    border-color: #012d00;
+    border-radius: 0;
+}
+
+#imgFrontYard {
+    height: 650px;
+    z-index: 1;
+}
+
+.navbar-nav li a {
+    color: #54e254
+}
+
+.navbar-inverse .navbar-brand {
+    color: #54e254;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:active {
+    color: #adf7ad;
+}
+
+#basic-nav-dropdown {
+    color: #54e254;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #54e254;
+    background-color: #3f3f3f;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #54e254
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #adf7ad;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    background: rgba(56, 52, 52, 0.82);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #232323;
+    color: #54e254;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #54e254;
+    text-decoration: none;
+    background-color: #232323;
+    outline: 0;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #535353;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #54e254;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+#displayDataForTreeX {
+    display: none;
+}
+
+.weatherClass {
+    display: none;
+}
+
+#weather {
+    display: inline;
+}
+
+#currentTemp:hover {
+    cursor: default;
+    color: #54e254;
+}
+
+#navWeather:hover, #navWeather:focus {
+    cursor: default;
+    color: #54e254;
+}
+
+.container {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #54e254;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #adf7ad;
+    }
+}
+
+#basic-nav-dropdown:hover {
+    color: #adf7ad;
+}
+
+#resume{
+    border: solid 4px white;
+}
+
+#resume:hover{
+    border: solid 4px deepskyblue;
+}
+
+#homepageContent{
+    background: url(../images/Left_Side.jpg) left top no-repeat;
+    height: calc(100vh - 50px);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+#frontYardContent{
+    background: url(../images/Front_Yard.jpg) left top no-repeat;
+    height: calc(100vh - 50px);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 1;
+}
