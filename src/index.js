@@ -36,7 +36,7 @@ class TicTacToe extends Component {
 const PageNavigation = () => (
     <Router>
         <div>
-            <Navbar inverse collapseOnSelect id="homepageNav" >
+            <Navbar inverse collapseOnSelect id="homepageNav">
                 <Navbar.Header>
                     <Navbar.Brand pullLeft>
                         <Link to='/AboutMe'>Takoda Register</Link>
@@ -44,22 +44,21 @@ const PageNavigation = () => (
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
-                <Nav>
-                    <LinkContainer to="/SideYard"><NavItem>Side Yard</NavItem></LinkContainer>
-                    <LinkContainer to='/FrontYard'><NavItem> Front Yard </NavItem></LinkContainer>
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <Nav>
+                        <LinkContainer to="/SideYard"><NavItem>Side Yard</NavItem></LinkContainer>
+                        <LinkContainer to='/FrontYard'><NavItem> Front Yard </NavItem></LinkContainer>
                         <LinkContainer to='/Weather'><MenuItem>Weather</MenuItem></LinkContainer>
                         <LinkContainer to="/TicTacToe"><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>
-                        {/*<MenuItem divider/>*/}
-                        {/*<MenuItem>After Divider</MenuItem>*/}
-                        {/*<MenuItem><Link to='/HotNewHipHop'>HotNewHipHop</Link></MenuItem>*/}
-                    </NavDropdown>
-                </Nav>
+                        {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
+                        {/*<LinkContainer to='/Weather'><MenuItem>Weather</MenuItem></LinkContainer>*/}
+                        {/*<LinkContainer to="/TicTacToe"><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>*/}
+                        {/*</NavDropdown>*/}
+                    </Nav>
                     <Nav pullRight>
                         <Weather />
                         <NavItem><IntroJs/></NavItem>
                     </Nav>
-                    </Navbar.Collapse>
+                </Navbar.Collapse>
                 <EscKeyListener/>
             </Navbar>
 
