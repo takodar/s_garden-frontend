@@ -47,7 +47,7 @@ const PageNavigation = () => (
                     <Nav>
                         <LinkContainer to="/SideYard"><NavItem>Side Yard</NavItem></LinkContainer>
                         <LinkContainer to='/FrontYard'><NavItem> Front Yard </NavItem></LinkContainer>
-                        <LinkContainer to='/Weather' onClick="console.log('Weather Clicked');"><MenuItem>Weather</MenuItem></LinkContainer>
+                        <LinkContainer to='/Weather' id='weatherNav'><MenuItem>Weather</MenuItem></LinkContainer>
                         <LinkContainer to="/TicTacToe"><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>
                         {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
                         {/*<LinkContainer to='/Weather'><MenuItem>Weather</MenuItem></LinkContainer>*/}
