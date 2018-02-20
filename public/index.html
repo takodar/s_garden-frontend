@@ -12,6 +12,24 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-107268314-1');
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("ticTacToeNav").onclick = function() {
+                gtag('event', 'click', {
+                  'event_category': 'tictactoe',
+                  'event_label': 'tictactoe-click',
+                  'value': 1
+                });
+          }
+          document.getElementById("weatherNav").onclick = function() {
+                gtag('event', 'click', {
+                  'event_category': 'weatherNav',
+                  'event_label': 'weatherNav-click',
+                  'value': 1
+                });
+          }
+        });
     </script>
 
     <title>Takoda's React App</title>

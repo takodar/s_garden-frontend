@@ -18,6 +18,7 @@ import AboutMe from './AboutMe/AboutMe';
 import EscKeyListener from './TreePopup/escKeyPressClose';
 import {LinkContainer} from 'react-router-bootstrap';
 import IntroJs from './IntroJs';
+
 class FrontYardDisplay extends Component {
     render() {
         return <FrontYard/>
@@ -48,7 +49,7 @@ const PageNavigation = () => (
                         <LinkContainer to="/SideYard"><NavItem>Side Yard</NavItem></LinkContainer>
                         <LinkContainer to='/FrontYard'><NavItem> Front Yard </NavItem></LinkContainer>
                         <LinkContainer to='/Weather' id='weatherNav'><MenuItem>Weather</MenuItem></LinkContainer>
-                        <LinkContainer to="/TicTacToe"><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>
+                        <LinkContainer to="/TicTacToe" id='ticTacToeNav'><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>
                         {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
                         {/*<LinkContainer to='/Weather'><MenuItem>Weather</MenuItem></LinkContainer>*/}
                         {/*<LinkContainer to="/TicTacToe"><MenuItem>Tic Tac Toe</MenuItem></LinkContainer>*/}
@@ -71,6 +72,7 @@ const PageNavigation = () => (
             <Route path="/Weather" component={WeatherFull}/>
             {/*<Route path="/HotNewHipHop" component={HotNewHipHop}/>*/}
         </div>
+
     </Router>
 );
 
