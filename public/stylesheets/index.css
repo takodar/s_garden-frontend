@@ -5,6 +5,10 @@
     border-radius: 0;
 }
 
+#homepageNav > .container {
+    width: 100%;
+}
+
 #imgFrontYard {
     height: 650px;
     z-index: 1;
@@ -27,8 +31,13 @@
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #54e254;
+    color: #4eff4e;
     background-color: #3f3f3f;
+    outline: none;
+}
+
+a:focus, a:active{
+    outline: none;
 }
 
 .navbar-inverse .navbar-nav > li > a {

@@ -5,7 +5,7 @@ import '../public/stylesheets/font-awesome.min.css'
 import 'intro.js/introjs.css';
 import FontAwesome from 'react-fontawesome';
 
-export default class IntroJs extends Component {
+class IntroJs extends Component {
     constructor(props) {
         super(props);
 
@@ -50,5 +50,4 @@ export default class IntroJs extends Component {
         this.setState(prevState => ({ stepsEnabled: !prevState.stepsEnabled }));
     };
 }
-
-render(<IntroJs />, document.getElementById('root'));
+export default IntroJs;

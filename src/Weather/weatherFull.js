@@ -10,7 +10,7 @@ function myWeather(weather) {
     if(typeof weather !== 'undefined') {
         return <div className="col-lg-12">
         {Object.entries(weather).map(([key, weathers]) =>
-            <div key={key} className="col-lg-4">
+            <div key={key} className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <Panel collapsible defaultExpanded header={new Date(weathers['dt'] * 1000).toLocaleDateString('en-US', options)} id="pnlWeather" key={key}>
                 <img src={"http://openweathermap.org/img/w/" + weathers['weather'][0]['icon'] + '.png'} />
                 {weathers['temp']['max']}&deg;/{weathers['temp']['min']}&deg;
