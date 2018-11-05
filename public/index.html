@@ -4,34 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107268314-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-107268314-1');
-
-
-        document.addEventListener("DOMContentLoaded", function() {
-          document.getElementById("ticTacToeNav").onclick = function() {
-                gtag('event', 'click', {
-                  'event_category': 'tictactoe',
-                  'event_label': 'tictactoe-click',
-                  'value': 1
-                });
-          }
-          document.getElementById("weatherNav").onclick = function() {
-                gtag('event', 'click', {
-                  'event_category': 'weatherNav',
-                  'event_label': 'weatherNav-click',
-                  'value': 1
-                });
-          }
-        });
-    </script>
-
     <title>Takoda's React App</title>
   </head>
   <body>
