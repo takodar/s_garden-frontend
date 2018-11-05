@@ -5,6 +5,8 @@ import TreeDetails from '../TreePopup/treeModal';
 import React, {Component} from 'react';
 const hostName = process.env.REACT_APP_HOST;
 import '../../public/stylesheets/sideYard.css';
+import ReactDOM from 'react-dom';
+
 class SideYardTreeHoverLocations extends Component {
     state = {locations: []};
 
@@ -21,14 +23,12 @@ class SideYardTreeHoverLocations extends Component {
                     <div key={location._id}>
                         <div id={'tree_' + location.id} onMouseEnter={() => highlight(location.id)}
                              onMouseLeave={() => removeHighlight(location.id)}
-                             onClick={() => displayTreeData(location.id)}
-                             // style={{'left': location.left + 'px', 'top': location.top + 'px'}}>
+                             onClick={() => displayTreeData(location.id,location.type)}
                              >
 
                         </div>
                         <div id={"treePopUp" + location.id} className="treePopUp">
                             <div id={"displayDataForTree" + location.id}>
-                                <TreeDetails id={location.id} className={location.type}/>
 
                             </div>
                         </div>
@@ -49,11 +49,15 @@ function removeHighlight(id) {
     area.style.backgroundColor = 'transparent';
 }
 
-function displayTreeData(id) {
+function displayTreeData(id,treeType) {
     let treeData = document.getElementById('displayDataForTree' + id);
     let treePopUp = document.getElementById('treePopUp' + id);
     treeData.style.display = "inline";
     treePopUp.style.display = "inline";
+    ReactDOM.render(
+        <TreeDetails id={id} className={treeType}/>,
+        document.getElementById('displayDataForTree' + id),
+    );
 }
 
 export default SideYardTreeHoverLocations;

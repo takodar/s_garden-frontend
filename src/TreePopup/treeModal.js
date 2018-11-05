@@ -12,7 +12,8 @@ import ImageGallery from 'react-image-gallery';
 const hostName = process.env.REACT_APP_HOST;
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
-import '../../public/stylesheets/treeModal.css'
+import '../../public/stylesheets/treeModal.css';
+
 const cloudinary = require('cloudinary');
 cloudinary.config({
     cloud_name: 'dwz017v6p',
